@@ -27,6 +27,14 @@ git add Commands.txt
 git commit -m "C2"
 git push
 
+
+git config --global user.name "talmodovar"
+git config --global user.email "almodovar150@gmail.com"
+
+git add Commands.txt
+git commit -m "C3"
+git push
+
 ### 3- Branche 'DEV'
 
 ### 4- Merge
