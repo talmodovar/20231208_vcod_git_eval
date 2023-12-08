@@ -1,11 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 dep 1
 dep 2
 dep 3
 =======
+=======
+>>>>>>> DEV
 dep 2
 DEP3
 DEP 4
 
 mise a jour
+<<<<<<< HEAD
 >>>>>>> DEV
+=======
+>>>>>>> DEV
+
+dep 5
