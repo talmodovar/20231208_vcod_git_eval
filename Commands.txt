@@ -18,7 +18,6 @@ git push
 
 ### 2- Configuration
 git config --get-regexp alias.s "status -s"
-git config --get-regexp alias.l "log --graph --oneline"
 git config --get-regexp alias.ci "commit"
 git config --get-regexp alias.br "branch"
 
@@ -37,6 +36,49 @@ git push
 
 ### 3- Branche 'DEV'
 
+git branch dev
+echo >> requirements.txt
+git add requirements.txt
+git commit -m "C31"
+git push
+git push --set-upstream origin dev
+
+git switch dev
+
+git add requirements.txt
+git commit -m "C32"
+git push
+
+
 ### 4- Merge
 
+git switch main
+git add package.json
+git commit -m "C4"
+git push
+
+
+git merge DEV -m "C5"
+git push
+
+
 ### 5- Detached HEAD
+
+git switch main
+git add requirements.txt
+git commit -m "C6"
+git push
+
+git chekout e571f052440babe9781a049c4753ec92c4cd4659
+echo >> MANIFEST.xml
+git add MANIFEST.xml
+git commit -m "D51"
+git push
+
+git add MANIFEST.xml
+git commit -m "D52"
+git push
+
+git branch "detached"
+git push origin HEAD:main
+
